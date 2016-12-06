@@ -1,6 +1,8 @@
 package advent_of_code
 
-import "strconv"
+import (
+	"strconv"
+)
 
 type Point struct {
 	x int
@@ -84,15 +86,6 @@ func Abs(n int) int {
 	} else {
 		return -n
 	}
-}
-
-func contains(points []Point, p Point) bool {
-    for _, point := range points {
-        if point.x == p.x && point.y == p.y {
-            return true
-        }
-    }
-    return false
 }
 
 func NewLostman() *Lostman {
