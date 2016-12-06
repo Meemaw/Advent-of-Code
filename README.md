@@ -2,6 +2,9 @@
 
 My solutions to Advent of Code problems in 2016 written in GO. I'm using GO for the first time here and am learning it on the fly (life would be much easier with language like Python or Java). Solutions are uploaded one day after the official release not to ruin fun for the others.
 
+Link to project: http://adventofcode.com
+
+
 - [x] Day 1
 - [x] Day 2
 - [ ] Day 3
