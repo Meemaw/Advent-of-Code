@@ -2,6 +2,7 @@ package advent_of_code
 
 import (
 	"reflect"
+	"fmt"
 )
 
 type List struct {
@@ -38,7 +39,7 @@ func(list *List) Add(elements ...interface{}) {
 	}
 }
 
-func(list *List) get(index int) (interface{}, bool) {
+func(list *List) Get(index int) (interface{}, bool) {
 	if !list.withinRange(index) {
 		return nil, false
 	}
@@ -66,11 +67,18 @@ func(list* List) growBy(n int) {
 	}
 }
 
+func(list* List) Print() {
+	for i := 0; i < list.num_elements; i++ {
+		fmt.Print(list.elements[i])
+		fmt.Print("\n")
+	}
+}
+
 func(list* List) isEmpty() bool {
 	return list.num_elements == 0
 }
 
-func(list* List) size() int {
+func(list* List) Size() int {
 	return list.num_elements
 }
 
