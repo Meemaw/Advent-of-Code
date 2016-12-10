@@ -1,8 +1,11 @@
 # Advent-of-Code
 
+Solutions to Advent of Code of December 2016
+
 Link to project: http://adventofcode.com
 
-My solutions to Advent of Code problems in 2016 written in GO. I'm using GO for the first time here and am learning it on the fly (life would be much easier with language like Python). Solutions are uploaded one day after the official release not to ruin fun for the others.
+
+I took this opportunity to get more familiar with language I have been interested in for a long time - GO. Solutions are uploaded at least one day after the official release not to ruin fun for the others.
 
 
 
