@@ -11,7 +11,7 @@ My solutions to Advent of Code problems in 2016 written in GO. I'm using GO for 
 - [x] Day 3
 - [x] Day 4
 - [ ] Day 5
-- [ ] Day 6
+- [x] Day 6
 - [ ] Day 7
 - [ ] Day 8
 - [ ] Day 9
