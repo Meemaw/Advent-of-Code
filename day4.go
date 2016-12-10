@@ -12,34 +12,11 @@ const (
 	HighestAscii = 122
 )
 
-type InChar struct {
-	value rune
-	numOccurances int
-}
-
-type ByOccurances []InChar
-
-func (slice ByOccurances) Len() int {
-	return len(slice)
-}
-
-func (slice ByOccurances) Swap(i,j int) {
-	slice[i], slice[j] = slice[j], slice[i]
-}
-
-func (slice ByOccurances) Less(i,j int) bool {
-	if(slice[i].numOccurances == slice[j].numOccurances) {
-		return slice[i].value < slice[j].value
-	} else {
-		return slice[i].numOccurances > slice[j].numOccurances
-	}
-}
-
 func IsRealRoom(encrypted string) int {
 	if(encrypted == "") {
 		return -1
 	}
-	occurancesList := make([]InChar, 256, 256)
+	occurancesList := make([]CharOccurances, 256, 256)
 
 	checksumSplit := RegSplit(encrypted, "-[0-9]+")
 	s1 := strings.Split(encrypted, "[")

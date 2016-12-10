@@ -4,16 +4,6 @@ import (
 	"strconv"
 )
 
-type Point struct {
-	x int
-	y int
-}
-
-type Lostman struct {
-	position Point
-	orrientation int
-}
-
 const (
 	NORTH = 0
 	EAST = 1

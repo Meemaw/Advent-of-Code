@@ -5,10 +5,8 @@ import (
 	"sort"
 )
 
-
-
 func getCorrectedCharacter(lines []string, column int, mostFrequent bool) rune {
-	occurancesList := make([]InChar, 256, 256)
+	occurancesList := make([]CharOccurances, 256, 256)
 
 	for _, word := range lines {
 		occurancesList[word[column]].value = rune(word[column])

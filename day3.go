@@ -1,15 +1,8 @@
 package advent_of_code
 
 import (
-	"regexp"
 	"strconv"
 )
-
-type Triangle struct {
-	a int
-	b int
-	c int
-}
 
 func(tri *Triangle) isPossible() bool {
 	return tri.a + tri.b > tri.c && tri.a + tri.c > tri.b && tri.b + tri.c > tri.a
@@ -23,19 +16,6 @@ func NumberOfPossibleTriangles(triangles []*Triangle) int {
 		}
 	}
 	return count
-}
-
-func RegSplit(text string, delimeter string) []string {
-    reg := regexp.MustCompile(delimeter)
-    indexes := reg.FindAllStringIndex(text, -1)
-    laststart := 0
-    result := make([]string, len(indexes) + 1)
-    for i, element := range indexes {
-            result[i] = text[laststart:element[0]]
-            laststart = element[1]
-    }
-    result[len(indexes)] = text[laststart:len(text)]
-    return result
 }
 
 func parseInput(inputText string) [][]int {
